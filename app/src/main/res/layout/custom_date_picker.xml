@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_inffffff_outbbbbbb"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_select_with_title_close_top">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|left"
+            android:gravity="center"
+            android:text="Select Date"
+            android:textColor="#FF121D36"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/tv_cancle"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="top|right"
+            android:layout_margin="16dp"
+            android:background="@drawable/vc_close" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="year" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="month" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="day" />
+    </LinearLayout>
+
+    <View
+        style="@style/Line_Style_Mine"
+        android:layout_alignParentBottom="true" />
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.example.datepickerview.DatePickerView
+                android:id="@+id/year_pv"
+                android:layout_width="0dp"
+                android:layout_height="210dp"
+                android:layout_weight="1" />
+
+            <com.example.datepickerview.DatePickerView
+                android:id="@+id/month_pv"
+                android:layout_width="0dp"
+                android:layout_height="210dp"
+                android:layout_weight="1" />
+
+            <com.example.datepickerview.DatePickerView
+                android:id="@+id/day_pv"
+                android:layout_width="0dp"
+                android:layout_height="210dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_select"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/bg_round_dp5_bg1ccf9e"
+        android:gravity="center"
+        android:text="OK"
+        android:textSize="16sp" />
+
+</LinearLayout>
